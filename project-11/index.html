@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sytle.css">
+    <title>project-11</title>  
+</head>
+<body>
+    
+<div class="head">
+    <h1>برنامج إدارة الموظفين</h1>
+    <p>أهلا وسهلا بكم في برنامج إدارة الموظفين-الإصدار الأول </p>
+</div>
+
+<div class="inputs">
+    <input type="text" placeholder="اسم الموظف " id="name">
+    <select name="" id="department" class="department">
+        <option value="" selected disabled>اسم القسم</option>
+        <option value="القسم التقني">القسم التقني</option>
+        <option value="الموارد البشريه"> الموارد البشريه</option>
+        <option value="المحاسبة">المحاسبة</option>
+    </select>
+    
+    
+
+    <div class="sallary">
+        <input onkeyup="calc_sallary()" type="text" placeholder=" الراتب" id="sallary">
+        <input onkeyup="calc_sallary()" type="text" placeholder=" التأمين" id="security">
+        <input onkeyup="calc_sallary()" type="text" placeholder=" ضريبه الدخل" id="tax">
+        <input readonly type="text" placeholder=" صافي الراتب" id="net_sallary">
+    </div>
+
+    <button class="" id="save">حفظ البيانات</button>
+
+    <div class="search">
+        <input type="text" placeholder="" id="">
+        <input type="text" placeholder="" id="">
+        <button> بحث باستخدام  اسم الموظفين</button>
+        <button> بحث عن طريق القسم</button>
+
+    </div>
+   
+    <button onclick="deletAllData()"> حذف جميع الموظفين</button>
+</div>
+
+
+<div class="result">
+    <table width="1000px">
+        <thead>
+            <th>اسم الموظف</th>
+            <th>القسم</th>
+            <th>الراتب</th>
+            <th>تعديل</th>
+            <th>حذف</th>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+
+
+
+    </table>
+</div>
+
+
+
+
+
+
+
+
+<script src="JS/script.js"></script> 
+</body>
+</html>
